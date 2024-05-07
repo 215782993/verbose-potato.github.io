@@ -7,10 +7,30 @@
 .login-register {
     display: flex;
     justify-content: flex-end; /* 将子元素向右对齐 */
+
 }
 
 /* 如果需要，可以添加更多的样式来定制链接的外观 */
 .login-register .nav-link {
     /* 例如：设置字体大小、颜色、间距等 */
     margin-left: 10px; /* 设置链接之间的间距 */
+}
+
+.navbar-nav.ml-auto.login-register {
+    display: flex; /* 使用Flexbox */
+    align-items: center; /* 垂直居中（如果需要）*/
+    justify-content: flex-end; /* 水平右对齐 */
+    list-style-type: none; /* 移除列表样式 */
+    padding: 0; /* 移除默认的padding */
+    margin: 0; /* 移除默认的margin */
+}
+
+.nav-item {
+    display: flex; /* 使得内部的nav-links可以并排显示 */
+    align-items: center; /* 垂直居中 */
+}
+
+.nav-links {
+    display: flex; /* 使得nav-link和nav-link-separator并排显示 */
+    align-items: center; /* 垂直居中 */
 }

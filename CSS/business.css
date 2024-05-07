@@ -1,10 +1,22 @@
 
+.add-img{
+    position: relative; /* 设置为相对定位，以便子元素可以使用绝对定位 */
+    display: inline-block; /* 或者其他你需要的显示方式 */
+    border: none;
+}
+.btn-img{
+    width: 15px;
+    height: 15px;
+}
+
 .preview-img {
     width: 100px;
-    height: 100px;
+    height: auto;
     margin: 10px;
     border-radius:10px ;
+    display: block;
 }
+
 .img{
     width: 100px;
     height: 100px;
@@ -14,6 +26,7 @@
 .btn{
     float: right;
 }
+
 @media screen and (max-width: 700px){
     .container-img{
         margin-left: -10px;
@@ -28,16 +41,48 @@
     #textarea{
         border: none;
     }
-    .fixed-button-container {
+/*    .fixed-button-container {
         position: fixed;
-        bottom: 20px; /* 根据需要调整距离底部的距离 */
-        right: 20px; /* 根据需要调整距离右侧的距离 */
-        z-index: 999; /* 确保按钮在其他内容之上 */
-    }
+        bottom: 20px; !* 根据需要调整距离底部的距离 *!
+        right: 20px; !* 根据需要调整距离右侧的距离 *!
+        z-index: 999; !* 确保按钮在其他内容之上 *!
+    }*/
     .btn{
         border-radius: 25px;
         width: 100px;
+        margin: 25px 15px 25px 0;
     }
 
+}
+.delete-btn{
+    position: absolute; /* 绝对定位，相对于最近的已定位祖先元素（在这里是.image-container） */
+    top: 1px; /* 距离容器顶部的距离 */
+    right: 5px; /* 距离容器右侧的距离 */
+    display: inline-block; /* 确保按钮是内联块级元素 */
+    text-decoration: none; /* 移除下划线 */
+    border: none;
+    cursor: pointer; /* 鼠标悬停时显示小手图标 */
+    background: none;
 
+}
+
+.text-area-container {
+    position: relative;
+}
+
+.text-count {
+    position: absolute;
+    bottom: 5px; /* 调整位置 */
+    right: 5px; /* 调整位置 */
+    background-color: rgba(255, 255, 255, 0.7); /* 半透明背景 */
+    padding: 2px 5px;
+    border-radius: 3px;
+    font-size: 12px; /* 调整字体大小 */
+}
+
+.title-input {
+    font-size: 25px; /* 您可以根据需要调整字体大小 */
+}
+.text-body{
+    font-size: 20px;
 }

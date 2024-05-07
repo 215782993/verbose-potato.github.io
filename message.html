@@ -11,14 +11,11 @@
 <body>
 
 <div class="container mt-5">
-
+    <div class="container">
+        <a href="index.html" class="nav-link"><img src="img/图片3.png" style="width: 15px;height: 20px;margin:-20px,"></a>
+    </div>
     <form id="message" name="message" action="#" method="post">
         <div class="container">
-            <a href="index.html" class="nav-link"><img src="img/图片3.png" style="width: 15px;height: 20px;margin:-20px,"></a>
-        </div>
-
-        <div class="container">
-
             <h3>业主信息</h3>
             <!-- 业主信息 -->
             <div class="form-group">
@@ -28,13 +25,11 @@
             <div class="form-group">
                 <label for="phone">手机号</label>
                 <input type="tel" class="form-control" id="phone" name="phone" required>
-
             </div>
             <div class="form-group">
                 <label for="address">住址</label>
                 <textarea class="form-control" id="address" name="address" rows="3" required></textarea>
             </div>
-
         </div>
 
         <div class="container">
@@ -44,12 +39,14 @@
             <div class="form-group">
                 <label>户型</label>
                 <div class="Unit-type">
-                    <span>房：</span>
                     <input class="number-input form-control" id="rooms" name="rooms" type="text" required>
-                    <span>厅：</span>
+                    <span>房</span>
                     <input class="number-input form-control" id="halls" name="halls" type="text" required>
-                    <span>卫：</span>
+                    <span>厅</span>
                     <input class="number-input form-control" id="baths" name="baths" type="text" required>
+                    <span>卫</span>
+                    <input class="number-input form-control" id="kitchen" name="kitchen" type="text" required>
+                    <span>厨</span>
                 </div>
             </div>
 
@@ -81,8 +78,11 @@
         </div>
 
             <div class="container">
-                <h3>更多信息</h3>
-                <a href="#" class="toggle-link rotate-link"><img src="img/图片1.png"></a>
+
+                <a href="#" class="toggle-link">
+                    <h3>更多信息</h3>
+                    <img class="img rotate-img" src="img/图片1.png" alt="信息图片">
+                </a>
                 <div class="container-more" style="display: none;">
                     <div class="form-group">
                         <label for="demand">需求</label>
@@ -103,7 +103,9 @@
                     </div>
                  </div>
             </div>
-        <button type="submit" class="btn btn-primary fixed-button">提交</button>
+        <div class="fixed-button-container">
+            <button type="submit" class="btn btn-primary fixed-button">提交</button>
+        </div>
     </form>
 </div>
 

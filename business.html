@@ -26,8 +26,11 @@
         </div>
         </div>
         <div class="form-group">
-            <input type="text" class="form-control" id="title" name="title" placeholder="不是哥们，不写个标题吗" required>
-            <textarea class="form-control" id="description" rows="3"></textarea>
+            <input type="text" class="form-control title-input" id="title" name="title" placeholder="不是哥们，不写个标题吗" required>
+            <div class="text-area-container">
+                <textarea class="form-control text-body" id="description" rows="14" maxlength="400"></textarea>
+                <div class="text-count">0/400</div>
+            </div>
         </div>
         <div class="fixed-button-container">
             <button type="submit" class="btn btn-primary fixed-button">发布</button>

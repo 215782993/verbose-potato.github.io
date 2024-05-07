@@ -22,18 +22,21 @@ $(document).ready(function() {
         input.val(value); // 设置新的值
     }
     // 为每个需要限制的输入框添加事件监听器
-    $('#rooms, #halls, #baths').on('input', restrictInputToNumbersOrChineseNumbers);
+    $('#rooms, #halls, #baths, #kitchen').on('input', restrictInputToNumbersOrChineseNumbers);
 });
 
 
 $(document).ready(function() {
-    $('.toggle-link').click(function(e) {
-        e.preventDefault(); // 阻止<a>标签的默认行为（跳转到href）
+    $(document).ready(function() {
+        $('.toggle-link').click(function(e) {
+            e.preventDefault(); // 阻止默认链接行为（如页面跳转）
+            $(this).find('.rotate-img').toggleClass('flipped'); // 切换翻转类
+
         var $container = $('.container-more');
         var $link = $(this);
 
         // 切换链接的旋转状态
-        $link.toggleClass('rotated');
+    $link.toggleClass('flipped');
 
         // 直接显示或隐藏容器，不使用动画
         if ($container.is(':visible')) {
@@ -41,6 +44,7 @@ $(document).ready(function() {
         } else {
             $container.show();
         }
+        });
     });
 });
 
