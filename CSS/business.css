@@ -1,0 +1,43 @@
+
+.preview-img {
+    width: 100px;
+    height: 100px;
+    margin: 10px;
+    border-radius:10px ;
+}
+.img{
+    width: 100px;
+    height: 100px;
+    margin: 10px;
+    border-radius:10px ;
+}
+.btn{
+    float: right;
+}
+@media screen and (max-width: 700px){
+    .container-img{
+        margin-left: -10px;
+    }
+    .form-control{
+        margin-bottom: 20px;
+        border: none;
+        border-bottom: 1px solid #c6c8ca;
+        box-shadow:none ;
+        border-radius: 0px;
+    }
+    #textarea{
+        border: none;
+    }
+    .fixed-button-container {
+        position: fixed;
+        bottom: 20px; /* 根据需要调整距离底部的距离 */
+        right: 20px; /* 根据需要调整距离右侧的距离 */
+        z-index: 999; /* 确保按钮在其他内容之上 */
+    }
+    .btn{
+        border-radius: 25px;
+        width: 100px;
+    }
+
+
+}

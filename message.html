@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>title</title>
+    <link rel="stylesheet" href="CSS/message.css">
+    <link rel="stylesheet" href="CSS/bootstrap4.5.0.min.css">
+    <script src="JS/jquery-1.12.3.js"></script>
+</head>
+<body>
+
+<div class="container mt-5">
+
+    <form id="message" name="message" action="#" method="post">
+        <div class="container">
+            <a href="index.html" class="nav-link"><img src="img/图片3.png" style="width: 15px;height: 20px;margin:-20px,"></a>
+        </div>
+
+        <div class="container">
+
+            <h3>业主信息</h3>
+            <!-- 业主信息 -->
+            <div class="form-group">
+                <label for="ownerName">姓名</label>
+                <input type="text" class="form-control" id="ownerName" name="ownerName" required>
+            </div>
+            <div class="form-group">
+                <label for="phone">手机号</label>
+                <input type="tel" class="form-control" id="phone" name="phone" required>
+
+            </div>
+            <div class="form-group">
+                <label for="address">住址</label>
+                <textarea class="form-control" id="address" name="address" rows="3" required></textarea>
+            </div>
+
+        </div>
+
+        <div class="container">
+
+        <!-- 房子信息 -->
+            <h3>房子信息</h3>
+            <div class="form-group">
+                <label>户型</label>
+                <div class="Unit-type">
+                    <span>房：</span>
+                    <input class="number-input form-control" id="rooms" name="rooms" type="text" required>
+                    <span>厅：</span>
+                    <input class="number-input form-control" id="halls" name="halls" type="text" required>
+                    <span>卫：</span>
+                    <input class="number-input form-control" id="baths" name="baths" type="text" required>
+                </div>
+            </div>
+
+            <div class="form-group">
+                <label for="area">面积</label>
+                <input type="number" class="form-control" id="area" name="area" placeholder="请输入面积（平方米）" required>
+            </div>
+
+            <div class="form-group">
+                <label for="style">装修类型</label>
+                <select class="form-control" id="style" name="style" required>
+                    <option value="">请选择装修类型</option>
+                    <option value="家装">家装</option>
+                    <option value="工装">工装</option>
+                    <option value="软装">软装</option>
+                </select>
+            </div>
+            <div class="form-group">
+                <label for="style1">承包方式</label>
+                <select class="form-control" id="style1" name="style" required>
+                    <option value="">请承包方式</option>
+                    <option value="清包">清包</option>
+                    <option value="半包">半包</option>
+                    <option value="全包">全包</option>
+                    <option value="整装">整装</option>
+                </select>
+            </div>
+
+        </div>
+
+            <div class="container">
+                <h3>更多信息</h3>
+                <a href="#" class="toggle-link rotate-link"><img src="img/图片1.png"></a>
+                <div class="container-more" style="display: none;">
+                    <div class="form-group">
+                        <label for="demand">需求</label>
+                        <textarea class="form-control" id="demand" name="demand" rows="3" required></textarea>
+                    </div>
+                    <div class="form-group" >
+                        <label for="style2">风格类型</label>
+                        <select class="form-control" id="style2" name="style" >
+                            <option value="">请选择类型</option>
+                            <option value="现代简约">现代简约</option>
+                            <option value="中式古典">中式古典</option>
+                            <option value="custom">自定义</option>
+                        </select>
+
+                        <!-- 用于自定义输入的输入框 -->
+                        <input type="text" id="customInput" name="customStyle" placeholder="请输入自定义风格" class="form-control custom-input" style="display: none;">
+
+                    </div>
+                 </div>
+            </div>
+        <button type="submit" class="btn btn-primary fixed-button">提交</button>
+    </form>
+</div>
+
+
+</body>
+
+<script src="JS/message.js"></script>
+<script src="JS/jquery-1.12.3.js"></script>
+</html>
+

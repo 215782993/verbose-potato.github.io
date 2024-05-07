@@ -1,0 +1,53 @@
+.rotate-link {
+    display: inline-block; /* 类似于按钮的显示方式 */
+    text-decoration: none; /* 移除下划线 */
+    transition: transform 0.5s ease-in-out; /* 旋转动画的过渡效果 */
+}
+
+.rotate-link.rotated {
+    transform: rotate(90deg); /* 旋转180度 */
+}
+
+/* 初始隐藏内容 */
+.container-more {
+    display: none;
+}
+img{
+    width: 15px;
+    height: 15px;
+}
+
+.container{
+        margin: 30px;
+
+}
+
+.Unit-type {
+    display: flex;
+    align-items: center; /* 使所有子元素在交叉轴上居中对齐（这里是垂直居中）*/
+}
+
+.Unit-type span {
+    margin-right: 5px; /* 添加一些间距在标签和输入框之间 */
+}
+
+.Unit-type input {
+    flex: 1; /* 让输入框占据剩余的空间 */
+    margin-right: 10px; /* 添加一些间距在输入框之间 */
+}
+
+/* 最后一个输入框不需要右边的间距 */
+.Unit-type input:last-child {
+    margin-right: 0;
+}
+.btn{
+    border-radius: 25px;
+    width: 100px;
+    float: right;
+}
+.fixed-button-container {
+    position: fixed;
+    bottom: 20px; /* 根据需要调整距离底部的距离 */
+    right: 20px; /* 根据需要调整距离右侧的距离 */
+    z-index: 999; /* 确保按钮在其他内容之上 */
+}

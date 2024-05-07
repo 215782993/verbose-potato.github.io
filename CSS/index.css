@@ -1,0 +1,16 @@
+@media screen and (min-width: 700px) {
+    .nav-link:nth-last-child(5){
+        margin-left: 500px;
+    }
+}
+/* 使用Flexbox将登录和注册链接向右对齐 */
+.login-register {
+    display: flex;
+    justify-content: flex-end; /* 将子元素向右对齐 */
+}
+
+/* 如果需要，可以添加更多的样式来定制链接的外观 */
+.login-register .nav-link {
+    /* 例如：设置字体大小、颜色、间距等 */
+    margin-left: 10px; /* 设置链接之间的间距 */
+}
