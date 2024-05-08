@@ -1,3 +1,12 @@
+.add-img {
+    display: inline-block;
+    margin-left: 5px;
+    width: 100px;
+    height: 100px;
+    border-radius: 10px;
+    overflow: hidden;
+    margin-bottom: 5px;
+}
 
 .del-img {
     position: relative;/* 设置为相对定位，以便子元素可以使用绝对定位 */
@@ -5,7 +14,10 @@
     border: none;
     height: 100px;
     margin: 5px;
-    width: auto;
+    width: 100px;
+    overflow: hidden;
+    border-radius: 10px;
+
 }
 
 .btn-img {
@@ -17,18 +29,18 @@
 }
 
 .preview-img {
-    width: auto;
-    height: 100px;
-    margin: 10px;
-    border-radius: 10px;
+    width: 100%;
+    height: 100%;
+    border-radius: inherit;
     display: inline-block;
+    object-fit: cover;
 }
 
 .img {
-    width: 100px;
-    height: 100px;
-    margin: 10px;
-    border-radius: 10px;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    border-radius: inherit;
 }
 
 .btn {
@@ -60,8 +72,8 @@
 
 .delete-btn {
     position: absolute; /* 绝对定位，相对于最近的已定位祖先元素（在这里是.image-container） */
-    top: 0; /* 距离容器顶部的距离 */
-    right: -1%; /* 距离容器右侧的距离 */
+    top: -7px; /* 距离容器顶部的距离 */
+    right: -5px; /* 距离容器右侧的距离 */
     display: inline-block; /* 确保按钮是内联块级元素 */
     text-decoration: none; /* 移除下划线 */
     border: none;

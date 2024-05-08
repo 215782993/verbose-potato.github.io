@@ -11,7 +11,6 @@ document.getElementById('photoUpload').addEventListener('change', function(e) {
     if (previewArea.querySelectorAll('.preview-img').length + files.length >6) {
             alert('您选择的照片数量超过了6张，请减少后再试。');
             e.target.value = '';// 清空文件选择
-            addControl.style.visibility = 'hidden';
             return ;
     }
 
@@ -60,6 +59,7 @@ document.getElementById('photoUpload').addEventListener('change', function(e) {
                     if (addControl) {
                         addControl.style.display = 'block'; //
                         addControl.style.visibility = 'visible'; //
+
                     }
                 });
 

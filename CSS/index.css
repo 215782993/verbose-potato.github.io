@@ -1,8 +1,13 @@
-@media screen and (min-width: 700px) {
-    .nav-link:nth-last-child(5){
+@media screen and (min-width: 700px){
+    .navbar-nav.ml-auto.login-register{
         margin-left: 500px;
     }
 }
+
+.nav-link:nth-last-child(5){
+        margin-left: 500px;
+}
+
 /* 使用Flexbox将登录和注册链接向右对齐 */
 .login-register {
     display: flex;
