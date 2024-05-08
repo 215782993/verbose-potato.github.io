@@ -29,7 +29,7 @@ document.getElementById('photoUpload').addEventListener('change', function(e) {
             return function(e) {
                 var imgWrapper = document.createElement("span");// 创建包裹 span
                 var img = document.createElement("img");
-                imgWrapper.classList.add('add-img');
+                imgWrapper.classList.add('del-img');
                 img.classList.add('preview-img');
                 img.src = e.target.result;
                 // 添加删除按钮

@@ -1,62 +1,67 @@
 
-.add-img{
-    position: relative; /* 设置为相对定位，以便子元素可以使用绝对定位 */
+.del-img {
+    position: relative;/* 设置为相对定位，以便子元素可以使用绝对定位 */
     display: inline-block; /* 或者其他你需要的显示方式 */
     border: none;
-    height: 75px;
-    margin: 10px;
-    width: 75px;
-
+    height: 100px;
+    margin: 5px;
+    width: auto;
 }
-.btn-img{
+
+.btn-img {
     width: 15px;
     height: 15px;
+    background-color: black;
+    border-radius:30px ;
+    border: none;
 }
 
 .preview-img {
-    width: 100%;
-    height: auto;
+    width: auto;
+    height: 100px;
     margin: 10px;
-    border-radius:10px ;
-    display: block;
+    border-radius: 10px;
+    display: inline-block;
 }
 
-.img{
+.img {
     width: 100px;
     height: 100px;
     margin: 10px;
-    border-radius:10px ;
+    border-radius: 10px;
 }
-.btn{
+
+.btn {
     float: right;
 }
 
-@media screen and (max-width: 700px){
-    .container-img{
+    .container-img {
         margin-left: -10px;
     }
-    .form-control{
+
+    .form-control {
         margin-bottom: 20px;
         border: none;
         border-bottom: 1px solid #c6c8ca;
-        box-shadow:none ;
+        box-shadow: none;
         border-radius: 0;
     }
-    #textarea{
+
+    #textarea {
         border: none;
     }
 
-    .btn{
+    .btn {
         border-radius: 25px;
         width: 100px;
         margin: 25px 15px 25px 0;
     }
 
-}
-.delete-btn{
+
+.delete-btn {
     position: absolute; /* 绝对定位，相对于最近的已定位祖先元素（在这里是.image-container） */
-    top: 0px; /* 距离容器顶部的距离 */
-    right: -15px; /* 距离容器右侧的距离 */
+    top: 0; /* 距离容器顶部的距离 */
+    right: -1%; /* 距离容器右侧的距离 */
     display: inline-block; /* 确保按钮是内联块级元素 */
     text-decoration: none; /* 移除下划线 */
     border: none;
@@ -82,6 +87,7 @@
 .title-input {
     font-size: 25px; /* 您可以根据需要调整字体大小 */
 }
-.text-body{
+
+.text-body {
     font-size: 20px;
 }
