@@ -3,7 +3,7 @@
     position: relative; /* 设置为相对定位，以便子元素可以使用绝对定位 */
     display: inline-block; /* 或者其他你需要的显示方式 */
     border: none;
-    height: 100px;
+    height: 75px;
     margin: 5px;
     width: 75px;
 
