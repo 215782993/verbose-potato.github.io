@@ -3,6 +3,10 @@
     position: relative; /* 设置为相对定位，以便子元素可以使用绝对定位 */
     display: inline-block; /* 或者其他你需要的显示方式 */
     border: none;
+    height: 100px;
+    margin: 5px;
+    width: 75px;
+
 }
 .btn-img{
     width: 15px;
@@ -10,7 +14,7 @@
 }
 
 .preview-img {
-    width: 100px;
+    width: 100%;
     height: auto;
     margin: 10px;
     border-radius:10px ;
@@ -36,17 +40,12 @@
         border: none;
         border-bottom: 1px solid #c6c8ca;
         box-shadow:none ;
-        border-radius: 0px;
+        border-radius: 0;
     }
     #textarea{
         border: none;
     }
-/*    .fixed-button-container {
-        position: fixed;
-        bottom: 20px; !* 根据需要调整距离底部的距离 *!
-        right: 20px; !* 根据需要调整距离右侧的距离 *!
-        z-index: 999; !* 确保按钮在其他内容之上 *!
-    }*/
+
     .btn{
         border-radius: 25px;
         width: 100px;
@@ -56,8 +55,8 @@
 }
 .delete-btn{
     position: absolute; /* 绝对定位，相对于最近的已定位祖先元素（在这里是.image-container） */
-    top: 1px; /* 距离容器顶部的距离 */
-    right: 5px; /* 距离容器右侧的距离 */
+    top: 0px; /* 距离容器顶部的距离 */
+    right: -15px; /* 距离容器右侧的距离 */
     display: inline-block; /* 确保按钮是内联块级元素 */
     text-decoration: none; /* 移除下划线 */
     border: none;
