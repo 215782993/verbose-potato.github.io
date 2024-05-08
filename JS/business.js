@@ -58,7 +58,8 @@ document.getElementById('photoUpload').addEventListener('change', function(e) {
                     previewArea.removeChild(imgWrapper); // 删除整个包裹 span
                     var addControl = document.getElementById('add');
                     if (addControl) {
-                        addControl.style.visibility = 'visible'; // 假设原本可能是隐藏的
+                        addControl.style.display = 'block'; //
+                        addControl.style.visibility = 'visible'; //
                     }
                 });
 
