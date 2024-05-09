@@ -1,0 +1,53 @@
+
+a.change:active,
+a.change:focus {
+    text-decoration: none; /* 确保在点击和聚焦时也没有下划线 */
+    color: black;
+}
+body {
+    background-color: #F5F5F5;
+
+}
+.container{
+    background-color: white;
+}
+a{
+    color: #000;
+    display: inline-block;
+}
+.img-avatar{
+    overflow: hidden;
+    height: 50px;
+    width: 50px;
+    float: right;
+    margin-right: 10px;
+    display: inline-block;
+
+}
+.avatar{
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+
+}
+.right-img{
+     float: right;
+     width: 10px;
+     height: 20px;
+
+}
+.form-group{
+    height: 60px;
+    display: flex;
+    align-items: center;
+    border-bottom: 2px solid #F5F5F5;
+}
+label{
+    margin-bottom: 0;
+    width: 100%;
+    height: 50px;
+    line-height: 50px;
+}
+.change{
+    width: 100%;
+}

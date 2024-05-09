@@ -1,7 +1,10 @@
-h3{
-    color: black;
-}
 
+.container{
+    background-color: white;
+}
+h3{
+     color: black;
+ }
 a.toggle-link:active,
 a.toggle-link:focus {
     text-decoration: none; /* 确保在点击和聚焦时也没有下划线 */
@@ -25,12 +28,6 @@ img{
     width: 15px;
     height: 15px;
 }
-
-.container{
-        margin: 30px;
-
-}
-
 .Unit-type {
     display: flex;
     align-items: center; /* 使所有子元素在交叉轴上居中对齐（这里是垂直居中）*/
@@ -57,6 +54,4 @@ img{
     margin-bottom: 20px;
     margin-right: 20px;
 }
-.img{
 
-}

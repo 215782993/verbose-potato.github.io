@@ -1,5 +1,4 @@
 
-
 document.getElementById('photoUpload').addEventListener('change', function(e) {
     var files = e.target.files;
     var previewArea = document.getElementById('previewArea');
