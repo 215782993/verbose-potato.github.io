@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>更改地区</title>
+    <link rel="stylesheet" href="../CSS/bootstrap4.5.0.min.css">
+    <link rel="stylesheet" href="../CSS/profile.css">
+</head>
+<body>
+<div class="container" style="background-color: #F5F5F5; display: flex; justify-content: space-between; align-items: center; height: 70px;">
+    <div class="form-group" style="display: flex; align-items: center;">
+        <a class=".ajax-link" id="scrollToTopLink" href="../profile.html" style="display: inline-block; margin-right: 10px;"><img src="../img/图片3.png" style="width: 10px; height: 20px;"></a>
+        <span style="font-size: 20px;">更改地区</span>
+    </div>
+    <label class="btn btn-primary" for="saveBtn" style="margin-left: 10px;width: 75px;height: 40px;">保存</label>
+</div>
+
+<div class="container" style="background-color: #F5F5F5;">
+    <form id="genderForm" method="post" action="#">
+        <div class="form-group">
+            <label for="province">省份：</label>
+            <select id="province" class="form-control">
+                <option value="">请选择省份</option>
+                <!-- 这里将动态添加省份选项 -->
+            </select>
+        </div>
+        <button class="btn btn-primary" id="saveBtn" style="margin-top: 10px; display: none;">保存</button>
+    </form>
+</div>
+<script src="../JS/jquery-1.12.3.js"></script>
+<script src="../JS/bootstrap4.5.0.min.js"></script>
+<script src="../JS/submit.js"></script>
+<script>
+    var provinces = [
+        '北京市', '天津市', '上海市', '重庆市', '河北省', '山西省', '内蒙古自治区',
+        '辽宁省', '吉林省', '黑龙江省', '江苏省', '浙江省', '安徽省', '福建省',
+        '江西省', '山东省', '河南省', '湖北省', '湖南省', '广东省', '广西壮族自治区',
+        '海南省', '四川省', '贵州省', '云南省', '西藏自治区', '陕西省', '甘肃省',
+        '青海省', '宁夏回族自治区', '新疆维吾尔自治区', '台湾省', '香港特别行政区', '澳门特别行政区'
+    ];
+
+    // 初始化省份选择器
+    function initProvinceSelector() {
+        var $province = $('#province');
+        provinces.forEach(function(province) {
+            $province.append('<option value="' + province + '">' + province + '</option>');
+        });
+    }
+
+    // 页面加载时初始化省份选择器
+    $(document).ready(function() {
+        initProvinceSelector();
+    });
+
+
+</script>
+</body>
+</html>

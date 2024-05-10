@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>实名认证</title>
+    <!-- 引入Bootstrap CSS -->
+    <link rel="stylesheet" href="../CSS/bootstrap4.5.0.min.css">
+    <link rel="stylesheet" href="../CSS/authentication.css">
+</head>
+<body>
+<div class="container" style="background-color: #F5F5F5; display: flex; justify-content: space-between; align-items: center; height: 70px;">
+    <div class="form-group" style="display: flex; align-items: center;">
+        <a  href="../profile.html" style="display: inline-block; margin-right: 10px;"><img src="../img/图片3.png" style="width: 10px; height: 20px;"></a>
+        <span style="font-size: 20px;">实名认证</span>
+    </div>
+    <label id="save" class="btn btn-primary" for="saveBtn" style="margin-left: 10px;width: 75px;height: 40px;">保存</label>
+</div>
+
+<div class="container" style="background-color: white;">
+    <form id="authenticationForm" method="post" action="#">
+        <div class="form-group i" >
+            <label for="photo_front">
+                <span class="img-avatar"><img class="avatar" id="preview_front" src="../img/图片7.png" alt="身份证正面"></span>
+            </label>
+            <input type="file" id="photo_front" name="front" accept="image/*" multiple style="display: none;">
+        </div>
+
+        <div class="form-group i" >
+            <label for="photo_opposite">
+                <span class="img-avatar"><img class="avatar" id="preview_opposite" src="../img/图片8.png" alt="身份证反面"></span>
+            </label>
+            <input type="file" id="photo_opposite" name="opposite" accept="image/*" multiple style="display: none;">
+        </div>
+        <button class="btn btn-primary" id="saveBtn" style="margin-top: 10px; display: none;">保存</button>
+
+    </form>
+</div>
+<script src="../JS/jquery-1.12.3.js"></script>
+<script src="../JS/bootstrap4.5.0.min.js"></script>
+<script src="../JS/authentication.js"></script>
+<script src="../JS/submit.js"></script>
+</body>
+</html>

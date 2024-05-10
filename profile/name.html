@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>更改昵称</title>
+    <link rel="stylesheet" href="../CSS/bootstrap4.5.0.min.css">
+    <link rel="stylesheet" href="../CSS/profile.css">
+</head>
+<body>
+<div class="container" style="background-color: #F5F5F5; display: flex; justify-content: space-between; align-items: center; height: 70px;">
+    <div class="form-group" style="display: flex; align-items: center;">
+        <a class=".ajax-link" id="scrollToTopLink" href="../profile.html" style="display: inline-block; margin-right: 10px;"><img src="../img/图片3.png" style="width: 10px; height: 20px;"></a>
+        <span style="font-size: 20px;">更改昵称</span>
+    </div>
+    <label class="btn btn-primary" for="saveBtn" style="margin-left: 10px;width: 75px;height: 40px;">保存</label>
+</div>
+
+<div class="container" style="background-color: #F5F5F5;">
+        <form id="username" method="post" action="#">
+            <div class="form-group">
+            <input type="text" id="nicknameInput" style="width: 200%; border: none; font-size: 20px; background-color: #F5F5F5; display: block; border-bottom: 1px solid black; padding: 10px;">
+            </div>
+            <button class="btn btn-primary" id="saveBtn" style="margin-top: 10px; display: none;">保存</button>
+        </form>
+</div>
+<script src="../JS/jquery-1.12.3.js"></script>
+<script src="../JS/bootstrap4.5.0.min.js"></script>
+<script src="../JS/submit.js"></script>
+</body>
+</html>

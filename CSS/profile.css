@@ -1,6 +1,8 @@
 
 a.change:active,
-a.change:focus {
+a.change:focus,
+a.change:hover{
+
     text-decoration: none; /* 确保在点击和聚焦时也没有下划线 */
     color: black;
 }

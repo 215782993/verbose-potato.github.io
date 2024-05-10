@@ -20,83 +20,53 @@
     <label for="photoUpload">
         <span class="text">头像</span>
         <img class="right-img" src="img/图片5.png" style="margin-top: 15px">
-        <span class="img-avatar"><img class="avatar" id="previewArea" src="img/图片6.png" alt="未设置"></span>
+        <span class="img-avatar"><img class="avatar" id="previewArea" src="img/图片9.png" alt="未设置"></span>
     </label>
     <input type="file" id="photoUpload" name="photo" accept="image/*" multiple style="display: none;">
     </div>
     <div class="form-group" >
         <label>
-            <a class="change" href="#username">
+            <a class="change" href="profile/name.html">
             <span class="text">昵称</span>
             <img class="right-img" src="img/图片5.png" style="margin-top: 15px">
-            <span class="img-avatar"> </span>
+            <span class="img-avatar" id="name">未设置</span>
             </a>
         </label>
+    </div>
 
-    </div>
     <div class="form-group" >
         <label>
-            <a class="change" href="#account">
-                <span class="text">账号</span>
-                <img class="right-img" src="img/图片5.png" style="margin-top: 15px">
-                <span class="img-avatar"> </span>
-            </a>
-        </label>
-    </div>
-    <div class="form-group" >
-        <label>
-            <a class="change" href="#gender">
+            <a class="change" href="profile/gender.html">
                 <span class="text">性别</span>
                 <img class="right-img" src="img/图片5.png" style="margin-top: 15px">
-                <span class="img-avatar"> </span>
+                <span class="img-avatar" id="gender"></span>
             </a>
         </label>
     </div>
+
     <div class="form-group" >
         <label>
-            <a class="change" href="#region">
+            <a class="change" href="profile/region.html">
                 <span class="text">地区</span>
                 <img class="right-img" src="img/图片5.png" style="margin-top: 15px">
-                <span class="img-avatar"> </span>
+                <span class="img-avatar" id="region"> </span>
             </a>
         </label>
     </div>
+
     <div class="form-group" >
         <label>
-            <a class="change" href="#real_name">
+            <a class="change" href="profile/authentication.html">
                 <span class="text">实名认证</span>
                 <img class="right-img" src="img/图片5.png" style="margin-top: 15px">
-                <span class="img-avatar"> </span>
+                <span class="img-avatar" id="authentication"> </span>
             </a>
         </label>
     </div>
 </div>
 
-
 <script src="JS/jquery-1.12.3.js"></script>
+<script src="JS/profile.js"></script>
 
-<script>
-    $(document).ready(function() {
-        $('#photoUpload').on('change', function(e) {
-            // 确保用户选择了文件
-            if (e.target.files && e.target.files[0]) {
-                var reader = new FileReader();
-
-                reader.onload = function(e) {
-                    // 将读取到的文件内容设置为预览图片的src
-                    $('#previewArea').attr('src', e.target.result);
-                };
-
-                // 读取用户选择的第一个文件
-                reader.readAsDataURL(e.target.files[0]);
-            }
-        });
-
-        // 如果你想通过点击某个元素来触发文件选择，可以添加以下代码
-        $('.fas.fa-upload').on('click', function() {
-            $('#photoUpload').click();
-        });
-    });
-</script>
 </body>
 </html>
