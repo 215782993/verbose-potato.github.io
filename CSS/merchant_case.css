@@ -1,0 +1,10 @@
+.title,.description{
+    border: none;
+}
+.description {
+    /* 假设单行文本高度为25px，则4行文本的高度为100px */
+    max-height: 100px; /* 4行 * 25px/行 */
+    overflow: hidden;
+    position: relative; /* 为了定位伪元素或按钮 */
+    line-height: 25px; /* 确保每行文本的高度一致 */
+}
